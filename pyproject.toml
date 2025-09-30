@@ -1,0 +1,7 @@
+[project]
+name = "lcc-cs210"
+version = "0.1.0"
+description = "Resources for LCC's Intro to AI Development"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
