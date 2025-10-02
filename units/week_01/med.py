@@ -32,5 +32,6 @@ if __name__ == '__main__':
     # Example 2: False Fever, True Cough (Cold)
     diagnose_symptoms(False, True)
 
+    # Also check the other possible combinations
     diagnose_symptoms(True, False)
     diagnose_symptoms(False, False)

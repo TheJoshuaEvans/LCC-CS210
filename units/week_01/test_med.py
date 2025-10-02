@@ -20,7 +20,7 @@ class TestPriceCoffee(unittest.TestCase):
             call('Diagnosis: Flu - Recommend rest and hydration.')
         ])
         # Write success message directly to stdout since we mocked `print`
-        sys.stdout.write("\n✅ Flu diagnosis test successful!\n")
+        sys.stdout.write("✅ Flu diagnosis test successful!\n")
 
     @patch('builtins.print')
     def test_infection(self, mock_print):
@@ -30,7 +30,7 @@ class TestPriceCoffee(unittest.TestCase):
             call('Patient Symptoms: Fever (True), Persistent Cough (False)'),
             call('Diagnosis: Possible Infection - Recommend primary care physician visit.')
         ])
-        sys.stdout.write("\n✅ Possible Infection diagnosis test successful!\n")
+        sys.stdout.write("✅ Possible Infection diagnosis test successful!\n")
 
     @patch('builtins.print')
     def test_cold(self, mock_print):
@@ -40,7 +40,7 @@ class TestPriceCoffee(unittest.TestCase):
             call('Patient Symptoms: Fever (False), Persistent Cough (True)'),
             call('Diagnosis: Cold/Allergies - Recommend over-the-counter medication.')
         ])
-        sys.stdout.write("\n✅ Cold/Allergies diagnosis test successful!\n")
+        sys.stdout.write("✅ Cold/Allergies diagnosis test successful!\n")
 
     @patch('builtins.print')
     def test_general_checkup(self, mock_print):
@@ -50,7 +50,7 @@ class TestPriceCoffee(unittest.TestCase):
             call('Patient Symptoms: Fever (False), Persistent Cough (False)'),
             call('Diagnosis: General Check-up - Patient appears healthy.')
         ])
-        sys.stdout.write("\n✅ General Check-up diagnosis test successful!\n")
+        sys.stdout.write("✅ General Check-up diagnosis test successful!\n")
 
 # Run the tests if being called directly
 if __name__ == '__main__':

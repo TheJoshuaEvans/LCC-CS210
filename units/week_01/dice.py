@@ -11,7 +11,8 @@ class Die:
 
     def roll(self):
         """Roll the die!"""
-        return random.randint(1, self.sides)
+        self.value = random.randint(1, self.sides)
+        return self.value
 
 class Player:
     """A player of the dice game"""
@@ -69,6 +70,6 @@ class DiceBattle:
 
         print("-----------------------------------")
 
-
-game = DiceBattle("PlayerA", "PlayerB")
-game.play()
+if __name__ == '__main__':
+    game = DiceBattle("PlayerA", "PlayerB")
+    game.play()
