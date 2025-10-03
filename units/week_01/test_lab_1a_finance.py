@@ -6,7 +6,7 @@ try:
 except:
     from lab_1a_finance import generate_financial_advice
 
-class TestPriceLab1aShipping(unittest.TestCase):
+class TestPriceLab1aFinance(unittest.TestCase):
     def test_string_inputs(self):
         # Test all possible outcomes when using only string parameters
         self.assertEqual(generate_financial_advice("short", "low" ), "High-Yield Savings Account" )
