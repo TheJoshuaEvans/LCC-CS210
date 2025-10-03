@@ -52,3 +52,7 @@ class TestPriceLab1aShipping(unittest.TestCase):
         with patch('builtins.print') as mock_print:
             self.assertIsNone(calculate_shipping_cost(1, "d"))
             mock_print.assert_any_call("Error: Invalid shipping zone specified.")
+
+# Run the tests if being called directly
+if __name__ == '__main__':
+    unittest.main()

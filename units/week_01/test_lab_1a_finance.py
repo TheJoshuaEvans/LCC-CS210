@@ -38,3 +38,7 @@ class TestPriceLab1aFinance(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             generate_financial_advice(-1, "low")
         self.assertTrue('Invalid time horizon.' in str(context.exception))
+
+# Run the tests if being called directly
+if __name__ == '__main__':
+    unittest.main()
