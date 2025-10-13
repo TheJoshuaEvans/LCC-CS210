@@ -1,0 +1,13 @@
+IF,AND,THEN,GOAL
+from_zone == 'A',                , tax = 0.0 ,
+from_zone == 'B',                , tax = 0.12,
+from_zone == 'C',                , tax = 0.15,
+to_zone == 'A'  , weight_kg <= 5 , cost = 10 , True
+to_zone == 'A'  , weight_kg <= 10, cost = 15 , True
+to_zone == 'A'  ,                , cost = 20 , True
+to_zone == 'B'  , weight_kg <= 5 , cost = 15 , True
+to_zone == 'B'  , weight_kg <= 10, cost = 20 , True
+to_zone == 'B'  ,                , cost = 25 , True
+to_zone == 'C'  , weight_kg <= 5 , cost = 20 , True
+to_zone == 'C'  , weight_kg <= 10, cost = 25 , True
+to_zone == 'C'  ,                , cost = 30 , True
