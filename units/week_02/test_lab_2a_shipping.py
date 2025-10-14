@@ -63,3 +63,7 @@ class Lab2aTests(unittest.TestCase):
 
         result = calculate_shipping_cost(11, 'C', 'A')
         self.assertAlmostEqual(result['total_cost'], 23)
+
+# Run the tests if being called directly
+if __name__ == '__main__':
+    unittest.main()
