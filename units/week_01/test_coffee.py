@@ -27,7 +27,6 @@ class TestPriceCoffee(unittest.TestCase):
         self.assertEqual(price_coffee("small", "dairy"),    3.00)
         self.assertEqual(price_coffee("medium", "dairy"),   4.00)
         self.assertEqual(price_coffee("large", "dairy"),    5.50)
-        print("✅ Coffee pricing tests successful!")
 
 # Run the tests if being called directly
 if __name__ == '__main__':

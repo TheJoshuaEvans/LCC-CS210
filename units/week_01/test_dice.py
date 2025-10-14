@@ -16,7 +16,6 @@ class TestDie(unittest.TestCase):
         # Should have initialized with a value
         self.assertGreaterEqual(die.value, 1)
         self.assertLessEqual(die.value, 6)
-        print("✅ Die initialization tests successful!")
 
     def test_roll_die(self):
         die = Die()
@@ -26,14 +25,12 @@ class TestDie(unittest.TestCase):
             value = die.roll()
             self.assertGreaterEqual(value, 1)
             self.assertLessEqual(value, 6)
-        print("✅ Die rolling tests successful!")
 
 class TestPlayer(unittest.TestCase):
     def test_init_player(self):
         player = Player("TestPlayer")
         self.assertEqual(player.name, "TestPlayer")
         self.assertEqual(player.roll_value, 0)
-        print("✅ Player initialization tests successful!")
 
     @patch('builtins.print')
     def test_roll_die(self, mock_print):
@@ -44,7 +41,6 @@ class TestPlayer(unittest.TestCase):
         self.assertGreaterEqual(player.roll_value, 1)
         self.assertLessEqual(player.roll_value, 6)
         mock_print.assert_called_with(f"TestPlayer rolled a {player.roll_value}")
-        print("✅ Player rolling tests successful!")
 
 class TestDiceBattle(unittest.TestCase):
     def test_dice_battle(self):
@@ -70,7 +66,6 @@ class TestDiceBattle(unittest.TestCase):
                     mock_print.assert_any_call("PlayerB wins! (High Roll)")
                 else:
                     mock_print.assert_any_call("It's a draw!")
-        print("✅ DiceBattle game tests successful!")
 
 # Run the tests if being called directly
 if __name__ == '__main__':
