@@ -1,6 +1,11 @@
 {
   "cSpell.words": [
-    "rollable"
+    "csvfile",
+    "Leadon",
+    "metacritic",
+    "rollable",
+    "steamid",
+    "ultrawide"
   ],
   "python.testing.unittestArgs": [
     "-v",
