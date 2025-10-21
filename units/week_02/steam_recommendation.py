@@ -28,24 +28,7 @@ def main():
             genres.add(genre['description'])
     print(f'Available genres: {", ".join(sorted(genres))}')
 
-    # Doing some goofing around...
-    rules = []
-    with open('units/week_02/test.csv', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            rules.append(row)
-            app_id = 2529820
-            locals = {f'metacritic_score': 81, 'r': None}
-            exec(f'r = {row["IF"]}', {}, locals)
-            print(locals['r'])
-    print(rules)
-
+    # I give up :)
 
 if __name__ == "__main__":
-    # This is fucking bonkers OuO
-    locals = {'x': 5, 'r': 0}
-    in_val = 'metacritic_score >= 80'
-    print(exec(f'r = {in_val}', {'metacritic_score': 78}, locals))
-    print(locals)
-
     main()
